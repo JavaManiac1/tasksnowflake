@@ -4,7 +4,7 @@
 WITH
 allunion AS
 (
-  SELECT dimension_1,zeroifnull(measure_1) AS measure_1,  0 AS measure_2    
+  SELECT dimension_1, zeroifnull(measure_1) AS measure_1, 0 AS measure_2    
   FROM A 
   UNION ALL
   SELECT dimension_1, 0 AS measure_1, zeroifnull(measure_2) AS measure_2  
